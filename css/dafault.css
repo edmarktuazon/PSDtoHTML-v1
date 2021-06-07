@@ -1,0 +1,19 @@
+/** @format */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	font-size: 0.9rem;
+	text-transform: none;
+}
+
+p {
+	font-size: 0.9rem;
+}
+
+.main {
+	overflow: hidden;
+}

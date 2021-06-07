@@ -1,0 +1,282 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Prompt:wght@500&display=swap");
+
+$font-fam-Prompt: "Prompt", sans-serif;
+$font-fam-Montserrat: "Montserrat", sans-serif;
+$light-color: #fff;
+$dark-color: #080000;
+$light-color2: rgb(240, 240, 15);
+
+.main {
+	.testimonials-section {
+		height: 155vh;
+		.heading {
+			position: relative;
+			margin-top: 100px;
+		}
+		.testimonials {
+			margin-top: 300px;
+			padding: 130px 0 150px;
+			color: #ffffff;
+
+			position: relative;
+			&::before {
+				content: "";
+				background: url("../assets/images/testimonial-bg.png");
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 1725px;
+
+				top: -500px;
+				z-index: -1;
+				position: absolute;
+				left: 0;
+			}
+			.carousel-inner {
+				width: 50%;
+				height: 400px;
+				background-color: rgb(255, 255, 255);
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 50px;
+				border-radius: 10px;
+				i {
+					color: #fa5530a8;
+					font-size: 50px;
+					display: flex;
+					justify-self: flex-start;
+					margin-left: 50px;
+					margin-top: 50px;
+				}
+				h3 {
+					color: $dark-color;
+					font-family: $font-fam-Prompt;
+				}
+				h4 {
+					color: $dark-color;
+					font-family: $font-fam-Montserrat;
+				}
+				p {
+					font-family: $font-fam-Montserrat;
+					line-height: 30px;
+					margin-left: auto;
+					margin-right: auto;
+					width: 70%;
+					color: $dark-color;
+				}
+				.carousel-item {
+					img {
+						border-radius: 100px;
+						width: 100px;
+						height: 100px;
+						margin-top: -100px;
+					}
+				}
+			}
+
+			.carousel-indicators {
+				bottom: -50px;
+
+				li {
+					background-color: #fff;
+					border-radius: 30px;
+					height: 10px;
+					width: 10px;
+					margin-left: 10px;
+					&.active {
+						background-color: $light-color2;
+					}
+				}
+			}
+			.icon {
+				color: #fff;
+				font-size: 50px;
+				cursor: pointer;
+				&:hover {
+					color: #f3613d;
+				}
+			}
+			input {
+				height: 50px;
+				width: 100px;
+				border-radius: 50px;
+				border: none;
+				width: 200px;
+				background-color: $light-color2;
+				color: $light-color;
+				margin-top: 70px;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+/* Media queries */
+
+@media (max-width: 1440px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				margin-top: 400px;
+			}
+		}
+	}
+}
+@media (max-width: 1098px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				margin-top: 350px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				margin-top: 350px;
+			}
+		}
+	}
+}
+@media (max-width: 992px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				margin-top: 250px;
+				.carousel-inner {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 898px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				margin-top: 50px;
+				.carousel-inner {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				margin-top: 0;
+				.carousel-inner {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				.carousel-inner {
+					width: 60%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				&::before {
+					top: -250px;
+				}
+				.carousel-inner {
+					width: 70%;
+					height: 450px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 488px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				&::before {
+					top: -250px;
+				}
+				.carousel-inner {
+					i {
+						margin-left: 20px;
+					}
+					width: 70%;
+					height: 600px;
+					.carousel-item {
+						img {
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 425px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				&::before {
+					top: -250px;
+				}
+				.carousel-inner {
+					width: 70%;
+					height: 600px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 386px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				&::before {
+					top: -250px;
+				}
+				.carousel-inner {
+					width: 70%;
+					height: 630px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 320px) {
+	.main {
+		.testimonials-section {
+			.testimonials {
+				margin: 0;
+				.heading {
+					margin-top: -100px;
+				}
+
+				margin-top: 300px;
+				.carousel-inner {
+					width: 75%;
+					height: 650px;
+				}
+			}
+		}
+	}
+}

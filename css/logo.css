@@ -1,0 +1,21 @@
+/** @format */
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Prompt:wght@500&display=swap");
+.main .logo {
+  background-color: #ff6635;
+}
+
+.main .logo a {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin: 0 50px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.main .logo a span {
+  font-family: "Prompt", sans-serif;
+  color: #fff;
+}
+/*# sourceMappingURL=logo.css.map */

@@ -1,0 +1,204 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Prompt:wght@500&display=swap");
+.main .performance-section .title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main .performance-section .title h1 {
+  font-family: "Prompt", sans-serif;
+  color: #fff;
+}
+
+.main .performance-section::before {
+  content: "";
+  position: absolute;
+  background: url("../assets/images/Vector 3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  top: -200px;
+  left: 0px;
+  margin: 0 180px;
+  max-width: 1600px;
+  width: 100%;
+  height: 2100px;
+}
+
+.main .performance-section .performance-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 100px;
+  gap: 100px;
+}
+
+.main .performance-section .performance-grid .performance-canvas,
+.main .performance-section .performance-grid .apps-canvas {
+  width: 100%;
+  height: 500px;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 180px;
+}
+
+.main .performance-section .performance-grid .performance-canvas .icon,
+.main .performance-section .performance-grid .apps-canvas .icon {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .performance-section .performance-grid .performance-canvas strong,
+.main .performance-section .performance-grid .apps-canvas strong {
+  font-family: "Prompt", sans-serif;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+.main .performance-section .performance-grid .performance-canvas h2,
+.main .performance-section .performance-grid .apps-canvas h2 {
+  font-family: "Prompt", sans-serif;
+  font-weight: normal;
+  margin-top: 50px;
+}
+
+.main .performance-section .performance-grid .performance-canvas h3,
+.main .performance-section .performance-grid .apps-canvas h3 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+}
+
+.main .performance-section .performance-grid .performance-canvas p,
+.main .performance-section .performance-grid .apps-canvas p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.main .performance-section .performance-grid .apps-canvas {
+  position: relative;
+  top: 200px;
+}
+
+.main .performance-section .performance-grid .apps-canvas .apps-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .performance-section .performance-grid .apps-canvas .apps-btn input {
+  height: 50px;
+  width: 100px;
+  border-radius: 50px;
+  border: none;
+  width: 200px;
+  background-color: #f0f00f;
+  color: #fff;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.main .performance-section .performance-grid .apps-canvas img {
+  width: 100%;
+  margin-top: -150px;
+}
+
+@media (max-width: 1440px) {
+  .main .performance-section::before {
+    margin: 0;
+  }
+  .main .performance-section .performance-grid {
+    margin: 0 20px;
+  }
+  .main .performance-section .performance-grid .performance-canvas,
+  .main .performance-section .performance-grid .apps-canvas {
+    height: 550px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main .performance-section .title {
+    top: 35%;
+  }
+  .main .performance-section::before {
+    margin: 0;
+    height: 7000px;
+  }
+  .main .performance-section .performance-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 0px;
+  }
+  .main .performance-section .performance-grid .performance-canvas,
+  .main .performance-section .performance-grid .apps-canvas {
+    height: 700px;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 538px) {
+  .main .performance-section::before {
+    margin: 0;
+    height: 6000px;
+  }
+  .main .performance-section .performance-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .main .performance-section .performance-grid .performance-canvas,
+  .main .performance-section .performance-grid .apps-canvas {
+    height: 550px;
+  }
+}
+
+@media (max-width: 346px) {
+  .main .performance-section::before {
+    margin: 0;
+    height: 7000px;
+  }
+  .main .performance-section .performance-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 346px) {
+  .main .performance-section::before {
+    margin: 0;
+    height: 7000px;
+  }
+  .main .performance-section .performance-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .main .performance-section .performance-grid .performance-canvas,
+  .main .performance-section .performance-grid .apps-canvas {
+    height: 650px;
+  }
+}
+/*# sourceMappingURL=performance.css.map */

@@ -1,0 +1,244 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Prompt:wght@500&display=swap");
+.main .contact-section {
+  background: url("https://images.pexels.com/photos/358627/pexels-photo-358627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.main .contact-section .contact-canvas {
+  background-color: #fff;
+  height: 80vh;
+  width: 600px;
+  border-radius: 5px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+}
+
+.main .contact-section .contact-canvas h2 {
+  padding: 50px;
+}
+
+.main .contact-section .contact-canvas .contact-field {
+  display: -ms-grid;
+  display: grid;
+  margin-top: -50px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .contact-section .contact-canvas .contact-field input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 70px;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid gray;
+}
+
+.main .contact-section .contact-canvas .contact-field .contact-btn {
+  height: 50px;
+  width: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: none;
+  width: 100px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  font-size: 14px;
+  background: #fff;
+}
+
+.main .contact-section .contact-canvas .contact-field .contact-no {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.main .contact-section .contact-canvas .contact-field .contact-no .contact-btn {
+  height: 50px;
+  width: 100px;
+  border-radius: 50px;
+  border: none;
+  width: 200px;
+  background-color: #f0f00f;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.main .contact-section .contact-canvas .contact-field .contact-no h4,
+.main .contact-section .contact-canvas .contact-field .contact-no p {
+  font-family: "Prompt", sans-serif;
+  color: gray;
+}
+
+.main .contact-section .contact-canvas .contact-field .contact-no h4 {
+  color: #ff1900b6;
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+}
+
+/* Media queries */
+@media (max-width: 1440px) {
+  .main .contact-section .contact-canvas {
+    height: 650px;
+    width: 600px;
+    top: 20px;
+  }
+  .main .contact-section .contact-canvas h2 {
+    padding: 100px;
+  }
+  .main .contact-section .contact-canvas .contact-field {
+    margin-top: -100px;
+  }
+  .main .contact-section .contact-canvas .contact-field input {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main .contact-section .contact-canvas {
+    height: 650px;
+    width: 600px;
+    top: 20px;
+  }
+  .main .contact-section .contact-canvas h2 {
+    padding: 50px;
+  }
+  .main .contact-section .contact-canvas .contact-field {
+    margin-top: 0;
+  }
+  .main .contact-section .contact-canvas .contact-field input {
+    width: 400px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main .contact-section .contact-canvas {
+    height: 650px;
+    width: 600px;
+    top: 20px;
+  }
+  .main .contact-section .contact-canvas h2 {
+    padding: 50px;
+  }
+  .main .contact-section .contact-canvas .contact-field {
+    margin-top: 0;
+  }
+  .main .contact-section .contact-canvas .contact-field input {
+    width: 400px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .contact-section .contact-canvas {
+    height: 650px;
+    width: 500px;
+    top: 20px;
+  }
+  .main .contact-section .contact-canvas h2 {
+    padding: 50px;
+  }
+  .main .contact-section .contact-canvas .contact-field {
+    margin-top: 0;
+  }
+  .main .contact-section .contact-canvas .contact-field input {
+    width: 400px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 570px) {
+  .main .contact-section .contact-canvas {
+    height: 650px;
+    width: 400px;
+    top: 10px;
+  }
+  .main .contact-section .contact-canvas .contact-field {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .contact-section .contact-canvas .contact-field input {
+    width: 300px;
+    margin-left: 50px;
+  }
+  .main .contact-section .contact-canvas .contact-no h4,
+  .main .contact-section .contact-canvas .contact-no p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .main .contact-section .contact-canvas {
+    height: 670px;
+    width: 300px;
+    top: 10px;
+  }
+  .main .contact-section .contact-canvas .contact-field {
+    margin-top: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .contact-section .contact-canvas .contact-field input {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .contact-section .contact-canvas .contact-no h4,
+  .main .contact-section .contact-canvas .contact-no p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .main .contact-section .contact-canvas {
+    height: 650px;
+    width: 300px;
+    top: 10px;
+  }
+  .main .contact-section .contact-canvas .contact-field {
+    margin-top: -20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .contact-section .contact-canvas .contact-field input {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .contact-section .contact-canvas .contact-no h4,
+  .main .contact-section .contact-canvas .contact-no p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
